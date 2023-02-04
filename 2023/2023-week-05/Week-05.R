@@ -78,6 +78,8 @@ ggplot(nuts2.sf) +
   geom_sf(aes(fill = values_groups), color = NA, alpha = 0.9) +
   geom_sf(data = borders, fill = NA, size = 0.1, col = "grey30") +
   # Center in Europe: EPSG 3035
+  #coord_sf(xlim = c(-2600000, 3100000), ylim = c(300000, 4500000), crs = "+proj=aea +lat_0=30 +lon_0=10 +lat_1=43 +lat_2=62 +x_0=0 +y_0=0 +ellps=intl +units=m +no_defs +type=crs")+
+  #coord_sf(xlim = c(2377294, 6500000), ylim = c(1413597, 5228510), crs = "+proj=aea +lat_0=30 +lon_0=10 +lat_1=43 +lat_2=62 +x_0=0 +y_0=0 +ellps=intl +units=m +no_defs +type=crs")+
   coord_sf(
     xlim = c(2377294, 6500000),
     ylim = c(1413597, 5228510)
